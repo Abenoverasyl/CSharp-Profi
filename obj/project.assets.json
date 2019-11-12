@@ -694,9 +694,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Баха\\source\\repos\\LambdaExplression\\LambdaExplression\\LambdaExplression.csproj",
-      "projectName": "LambdaExplression",
-      "projectPath": "C:\\Users\\Баха\\source\\repos\\LambdaExplression\\LambdaExplression\\LambdaExplression.csproj",
+      "projectUniqueName": "C:\\Users\\Баха\\source\\repos\\LambdaExplression\\LambdaExplression\\tutorials.csproj",
+      "projectName": "tutorials",
+      "projectPath": "C:\\Users\\Баха\\source\\repos\\LambdaExplression\\LambdaExplression\\tutorials.csproj",
       "packagesPath": "C:\\Users\\Баха\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Баха\\source\\repos\\LambdaExplression\\LambdaExplression\\obj\\",
       "projectStyle": "PackageReference",

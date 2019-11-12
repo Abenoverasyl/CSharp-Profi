@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LambdaExplression
+namespace tutorials
 {
-    class Book
+    public class Video
     {
         public string Title { get; set; }
-        public int Price { get; set; }
     }
 }

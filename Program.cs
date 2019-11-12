@@ -1,4 +1,5 @@
 ﻿using System;
+using tutorials;
 
 namespace LambdaExplression
 {
@@ -6,32 +7,18 @@ namespace LambdaExplression
     {
         static void Main(string[] args)
         {
-            /*
-             * 1
-            const int f = 5;
-            Func<int, int> fun = n => n * f;
+            var video = new Video() { Title = "Video 1" };
+            var videoEncoder = new VideoEncoder(); // publisher
 
-            var res = fun(10);
+            var mailService = new MailService(); // subscriber
+            var messageService = new MessageService(); // subscriber
 
-            Console.WriteLine(res);
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
-            */
-
-            var books = new BooksRepository().GetBooks();
-
-            var cheepBooks = books.FindAll(book => book.Price < 100);
-
-            foreach (var book in cheepBooks)
-            {
-                Console.WriteLine("{0} {1}", book.Title, book.Price);
-            }
+            videoEncoder.Encode(video); 
 
             Console.ReadKey();
         }
-
-        //static bool IsCheaperThan10Dollars(Book book)
-        //{
-        //    return book.Price < 100;
-        //}
     }
 }

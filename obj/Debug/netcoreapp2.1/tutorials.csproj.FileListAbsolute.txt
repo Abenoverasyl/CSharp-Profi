@@ -1,0 +1,11 @@
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\bin\Debug\netcoreapp2.1\tutorials.deps.json
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\bin\Debug\netcoreapp2.1\tutorials.runtimeconfig.json
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\bin\Debug\netcoreapp2.1\tutorials.runtimeconfig.dev.json
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\bin\Debug\netcoreapp2.1\tutorials.dll
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\bin\Debug\netcoreapp2.1\tutorials.pdb
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.csprojAssemblyReference.cache
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.csproj.CoreCompileInputs.cache
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.AssemblyInfoInputs.cache
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.AssemblyInfo.cs
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.dll
+C:\Users\Баха\source\repos\LambdaExplression\LambdaExplression\obj\Debug\netcoreapp2.1\tutorials.pdb
