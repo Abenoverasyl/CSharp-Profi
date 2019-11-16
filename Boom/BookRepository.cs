@@ -16,7 +16,7 @@ namespace Linq
                 new Book() {Title = "Thir", Price = 55},
                 new Book() {Title = "Four", Price = 25},
                 new Book() {Title = "Five", Price = 35}
-            }
+            };
         }
     }
 }

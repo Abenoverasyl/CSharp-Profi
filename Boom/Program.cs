@@ -19,15 +19,19 @@ namespace Linq
 
             // LINQ Extension Methods
             var cheapBooks = books
-                .Where(b => b.Price < 30)
+                .Where(b => b.Price > 30)
                 .OrderBy(b => b.Title)
                 .Select(b => b.Title);
 
             foreach (var book in cheaperBooks)
-                Console.WriteLine(book);
+                Console.WriteLine(book.Title);
+
+            Console.WriteLine("---");
 
             foreach (var book in cheapBooks)
                 Console.WriteLine(book);
+
+            Console.ReadKey();
 
         }
     }
