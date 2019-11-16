@@ -1,19 +1,33 @@
-﻿using System;
-using static Generics.BookList;
+﻿using Generics;
+using System;
+using System.Linq;
 
-namespace Generics
+namespace Linq
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var book = new Book { Isbn = "123", Title = "title" };
+            var books = new BookRepository().GetBooks();
 
-            var numbers = new GenericList<int>();
-            numbers.Add(10);
+            // LINQ Query Operators
+            var cheaperBooks =
+                from b in books
+                where b.Price < 30
+                orderby b.Title
+                select b;
 
-            var books = new GenericList<Book>();
-            books.Add(new Book());
+            // LINQ Extension Methods
+            var cheapBooks = books
+                .Where(b => b.Price < 30)
+                .OrderBy(b => b.Title)
+                .Select(b => b.Title);
+
+            foreach (var book in cheaperBooks)
+                Console.WriteLine(book);
+
+            foreach (var book in cheapBooks)
+                Console.WriteLine(book);
 
         }
     }

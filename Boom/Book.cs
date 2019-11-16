@@ -6,7 +6,7 @@ namespace Generics
 {
     class Book
     {
-        public string Isbn { get; set; }
+        public int Price { get; set; }
         public string Title { get; set; }
     }
 }
