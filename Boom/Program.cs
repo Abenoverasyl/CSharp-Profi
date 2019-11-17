@@ -1,20 +1,25 @@
 ﻿using System;
-using static Generics.BookList;
 
-namespace Generics
+namespace DinamicBinding
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var book = new Book { Isbn = "123", Title = "title" };
+            dynamic name = "Mosh";
+            name = 10;
+            name++;
+            Console.WriteLine(name);
 
-            var numbers = new GenericList<int>();
-            numbers.Add(10);
 
-            var books = new GenericList<Book>();
-            books.Add(new Book());
+            int a = 5;
+            dynamic b = a;
+            long c = b;
 
+            Console.WriteLine(c);
+
+
+            Console.ReadKey();
         }
     }
 }
