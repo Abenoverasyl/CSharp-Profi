@@ -1,5 +1,7 @@
 ﻿using System;
-using static Generics.BookList;
+using System.IO;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Generics
 {
@@ -7,14 +9,35 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            var book = new Book { Isbn = "123", Title = "title" };
+            DownloadHtml("http://msdn.microsoft.com");
+            DownloadHtmlAsync("http://msdn.microsoft.com");
 
-            var numbers = new GenericList<int>();
-            numbers.Add(10);
+            Console.ReadKey();
+        }
 
-            var books = new GenericList<Book>();
-            books.Add(new Book());
 
+        // not async
+        public static void DownloadHtml(string url)
+        {
+            var webClient = new WebClient();
+            var html = webClient.DownloadString(url);
+
+            using (var streamWriter = new StreamWriter(@"D:\apps    \result.html"))
+            {
+                streamWriter.Write(html);
+            }
+        }
+
+        // async
+        public static async Task DownloadHtmlAsync(string url)
+        {
+            var webClient = new WebClient();
+            var html = await webClient.DownloadStringTaskAsync(url);
+
+            using (var streamWriter = new StreamWriter(@"c:\projects\result.html"))
+            {
+                await streamWriter.WriteAsync(html);
+            }
         }
     }
 }
